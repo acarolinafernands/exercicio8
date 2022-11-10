@@ -1,0 +1,237 @@
+@charset "exercicio8_AnaFernandes";
+
+/*
+FONTES
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(Fontes/Android.otf) format('opentype');
+    font-weight: normal;
+}
+
+/*
+VARIAVEIS
+*/
+:root {
+        /*
+    CORES
+    */
+    --cor0: #FFFFFF;
+    --cor1: #ebe5c5;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+        /*
+    FONTES
+    */
+    --ftexto: Arial, Verdana, Helvetica, sans-serif;
+    --ftitulo1: "Bebas Neue", cursive;
+    --ftitulo2: "Android", cursive;
+}
+
+
+/*
+REGRAS
+*/
+
+a[target=_blank]::after {
+    content: '\00A0\1F517';
+}
+
+
+/*
+BODY
+*/
+
+body {
+    background-color: var(--cor1);
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*
+HEADER
+*/
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+header>h1 {
+    color: var(--cor0);
+    font: 48px var(--ftitulo1);
+    margin: 0px 0px 20xp;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.255)
+}
+
+header>p {
+    color: var(--cor0);
+    font: 19.2px var(--ftexto);
+    text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.255)
+}
+
+/*
+NAV
+*/
+nav {
+    background-color: var(--cor6);
+    font: 16px var(--ftexto);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav > a, nav > a:visited {
+    font: 16px var(--ftexto);
+    font-weight: bold;
+    color: var(--cor2);
+    margin-left: 20px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+nav > a:hover{
+    color: var(--cor4);
+}
+
+
+/*
+MAIN
+*/
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: auto;
+    padding: 20px;
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 10px rgb(93, 93, 93);
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+main strong {
+    width: 44.44px;
+    height: 17px;
+    color: var(--cor5);
+    font: 16px var(--ftexto);
+    font-weight: bolder;
+}
+
+
+main h1 {
+    min-width: 300px;
+    max-width: 1000px;
+    color: var(--cor6);
+    font: 28.8px Android, cursive;
+}
+
+
+main p {
+    min-width: 300px;
+    max-width: 1000px;
+    text-align: justify;
+    color: #000000;
+    font: 16px var(--ftexto);
+    margin: 15px 0px;
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+main h2 {
+    min-width: 300px;
+    max-width: 1000px;
+    color: var(--cor5);
+    font: 20.8px var(--ftitulo2);
+    background-image: linear-gradient(to right, var(--cor2),transparent);
+    text-indent: 8px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor6);
+    background-color: var(--cor2);
+    padding: 2px 6px; 
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main img {
+    
+    width: 100%;
+}
+
+#img2 {
+    max-width: 600px;
+    top: 10%;
+    margin: auto;
+    display: block; }
+
+
+#relativa{
+    position: relative;
+    background-color: var(--cor6);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 60%;
+}
+#absoluta{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(93, 93, 93);
+    margin-bottom: 10px;
+}
+
+aside > h3 {
+    background-color: var(--cor5);
+    color: var(--cor0);
+    font: 18.72px var(--ftexto);
+    font-weight: bolder;
+    margin: -10px -10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+
+aside > ul {
+    columns: 2;
+    padding-left: 15px;
+    list-style-type: "\2714";
+    line-height: 1.5;
+    list-style-position: initial;    
+}
+
+
+/*
+FOOTER
+*/
+footer {
+    background-color: var(--cor6);
+    color: var(--cor0);
+    text-align: center;
+    font: 0.8em var(--ftexto);
+    padding: 3px;
+    margin-top: 30px;
+}
